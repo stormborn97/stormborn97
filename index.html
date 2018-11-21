@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Stormborn Labs&trade;</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="materialize/css/materialize.css">
+  <link rel="icon" type="text/css" href="img/logo.png">
+  <!--<script src="jquery-3.2.1.min.js"></script>-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127849900-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127849900-1');
+  </script>
+
+</head>
+
+<body>
+
+
+  <div class="navbar-fixed">
+    <nav class="purple darken-2">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Stormborn Labs&trade;</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="fa fa-bars"></i>
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#home" class="hoverable">Home</a></li>
+            <li><a href="#Career" class="hoverable">Career</a></li>
+            <li><a href="#showcase" class="hoverable waves-effect waves-light modal-trigger">Showcase</a></li>
+            <li><a href="#developer" class="hoverable waves-effect waves-light modal-trigger">Events</a></li>
+            <li><a href="https://www.patreon.com/stormlite" class="hoverable">Support us</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul id="mobile-nav" class="sidenav">
+    <li><a href="#home" class="waves-effect waves-light">Home</a></li>
+    <li><a href="#Career" class="waves-effect waves-light">Career</a></li>
+    <li><a href="#showcase" class="waves-effect waves-light modal-trigger">Showcase</a></li>
+    <li><a href="#developer" class="hoverable waves-effect waves-light modal-trigger">Events</a></li>
+    <li><a href="#contacts" class="waves-effect waves-light">Contacts</a></li>
+  </ul>
+  <script>
+    //initializing the sidebar menu
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, {});
+      //set the options to null here...
+    });
+  </script>
+
+  <!-- Modal Structure -->
+  <div id="showcase" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <h5 class="md-title center">
+          <span class="purple-text"><i class="fa fa-gift"></i></span>
+          Products we created!</h5>
+        <hr>
+        <div class="col s12 m2">
+          <img src="img/camel.png" class="circle responsive-img">
+        </div>
+        <div class="col s12 m7">
+          <h6 class="center">Camel Pixel&trade;</h6>
+          <p class="what center">An image filtering web app.</p>
+        </div>
+        <div class="col s12 m3">
+          <h6></h6>
+          <a href="camelpixel/" class="adder pulse hoverable btn purple darken-2 waves-effect waves-light">Go to App</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m2">
+          <img src="img/storm.png" class="circle responsive-img">
+        </div>
+        <div class="col s12 m7">
+          <h6 class="center">StormQuotes <span class="sm purple-text">Beta</span></h6>
+          <p class="what center">A quotes reading Android app.</p>
+        </div>
+        <div class="col s12 m3">
+          <h6></h6>
+          <a href="https://play.google.com/store/apps/details?id=com.ionic.stormquotes&hl=en_ZA" class="adder pulse hoverable btn purple darken-2 waves-effect waves-light">Go to App</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m2">
+          <img src="img/yepi.png" class="circle responsive-img">
+        </div>
+        <div class="col s12 m7">
+          <h6 class="center">Yepi</h6>
+          <p class="what center">A 2D casual game for Android platform.</p>
+        </div>
+        <div class="col s12 m3">
+          <h6></h6>
+          <a href="https://play.google.com/store/apps/details?id=com.animusapps.yepi" class="adder pulse hoverable btn purple darken-2 waves-effect waves-light">Go to App</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Modal Structure -->
+  <div id="developer" class="modal">
+    <div class="modal-content">
+      <h5 class="center"> <i class="fa fa-smile-o"></i>&nbsp; What's happening at the Labs?</h5>
+      <div class="col s12 m8">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s12">
+              <span class="black-text"> Yay! It's Dev@stormbornlabs here!</span>
+              <p> -->> we are currently working on release projects.. </p>
+              <p>-->> an android game..</p>
+              <p>-->> a Js powered blog...(what'd expect? we hate PHP!)</p>
+              <p>-->> Not much else to say!!..</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //initializing the modal component..
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems, {
+        preventScrolling: true,
+        startingTop: '5%'
+      });
+    });
+  </script>
+
+
+  <!--The section for contents starts here...-->
+  <section id="home" class="slider purple darken-3 scrollspy">
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="center-align">
+      <h5 class="caption white-text">Design | Develop | Deploy</h5>
+
+      <div class="row"></div>
+      <a href="#dos" class="adder waves-effect waves-light btn purple hoverable">Learn More</a>
+    </div>
+    </div>
+  </section>
+  <script>
+    //initializing the sliders
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.slider');
+      var instances = M.Slider.init(elems, {
+        indicators: false,
+        height: 250
+
+      });
+    });
+  </script>
+  <section id="dos" class="dos section scrollspy white grey-text text-darken-3 center">
+    <div class="container">
+      <div class="row">
+        <h5 class="grey-text text-darken-3 center">
+          <span class="purple-text">- <i class="fa fa-question-circle"></i> -</span>
+        </h5>
+        <div class="col s12 m4">
+          <div class="card-panel hoverable">
+            <img src="img/inter.png" class="responsive-img">
+            <h5>Mobile Apps</h5>
+            <p class="what">Developing native apps for both IOS and android devices.</p>
+          </div>
+
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel hoverable">
+            <img src="img/game.png" class="responsive-img">
+            <h5>Indie Games</h5>
+            <p class="what">Creating indie games for both mobile and windows OS.</p>
+          </div>
+
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel hoverable">
+            <img src="img/webdev.png" class="responsive-img">
+            <h5>Web Technology</h5>
+            <p class="what">Developing web applications that runs on browser.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Career" class="dos section scrollspy white grey-text text-darken-3 center">
+    <div class="container">
+      <div class="row">
+        <h5 class="grey-text text-darken-3 center">
+        </h5>
+        <div class="col s12 m6">
+          <img src="img/webdev.png" class="responsive-img">
+        </div>
+        <div class="col s12 m6">
+          <h5 class="grey-text text-darken-3 right-align">Building a Digital studio</h5>
+          <hr>  <p class="what left-align">Our main focus now is create a digital platform to run our digital activities
+            and create IT solutions and services using what we have.
+          </p>
+          <a href="#studio" class="adder waves-effect waves-light btn purple hoverable left">Read more</a>
+        </div>
+
+      </div>
+      <div class="row">
+        <h5 class="grey-text text-darken-3 center">
+        </h5>
+
+        <div id="studio" class="scrollspy col s12 m6">
+          <h5 class="grey-text text-darken-3 left-align">Long term interests.</h5>
+          <hr> <p class="what left-align">Apart from doing clients works and such we are looking forward to expand
+            our business and possibly make a multi-purpose company. We are working hard to make sure we serve our
+            community
+            with the best that we could offer.
+
+          </p>
+          <a href="#flutter" class="adder waves-effect waves-light btn purple hoverable left">Continue Reading</a>
+
+        </div>
+        <div class="col s12 m6">
+          <img src="img/lts.png" class="hide-on-small-only responsive-img">
+        </div>
+
+      </div>
+      <div class="row">
+        <h5 class="grey-text text-darken-3 center">
+        </h5> 
+        <div class="col s12 m6">
+          <img src="img/appdev.png" class="responsive-img">
+        </div>
+        <div id="flutter" class="scrollspy col s12 m6">
+          <h5 class="grey-text text-darken-3 right-align">Apps with Flutter</h5>
+          <hr><p class="what left-align">Flutter's growing like "yay!" and what's even better
+            about it is that it is real native and with it, we can actually develop IOS and Android apps using
+            a single code-base which is quite epic for a start-up business.
+   </p>
+   <a href="http://flutter.io/" class="adder waves-effect waves-light btn purple hoverable left">Get Started</a>
+
+        </div>
+
+
+      </div>
+      <div class="row">
+        <h5 class="grey-text text-darken-3 center">
+        </h5>
+        <div class="col s12 m6">
+            <img src="img/revenue.png" class="hide-on-med-and-up responsive-img">
+          <h5 class="grey-text text-darken-3 left-align">Make a Donation</h5>
+          <hr><p class="what left-align">
+         We are a growing community and likewise we would very much appreciate as much help as we can get 
+         to move forward.
+          </p>
+          <a href="http://patreon.com/stormlite" class="adder waves-effect waves-light btn purple hoverable left">Become a patreon</a>
+
+        </div>
+        <div class="col s12 m6">
+          <img src="img/revenue.png" class="hide-on-small-only responsive-img">
+        </div>
+
+
+      </div>
+      <div class="row">
+          <h5 class="grey-text text-darken-3 center">
+          </h5>
+          <div class="col s12 m6">
+              <img src="img/questions.png" class="show-on-small responsive-img">
+            </div>
+          <div class="col s12 m6">
+            <h5 class="grey-text text-darken-3 right-align">Got a Question?</h5>
+           <hr> <p class="what left-align">
+           We like curiosity too. Ever got stumbled with any question that need solution immediately? The labs 
+           have that solution for you with the help of best minds from all over the world. 
+
+            </p>
+            <a href="#contacts" class="adder waves-effect waves-light btn purple hoverable left">Contact us</a>
+  
+          </div>
+        
+  
+  
+        </div>
+    </div>
+  </section>
+  
+
+  <footer id="contacts" class="page-footer purple darken-2 center scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5 class="white-text center">Follow us On:</h5>
+          <p class="what">Follow us on social media for more info.</p>
+
+          <a class="grey-text text-lighten-3" href="https://www.instagram.com/stormborn_labs/"><i class="hoverable small fa fa-instagram"></i></a>
+          <a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCcJ5zd4wRRX1ExktC2Q6BTg?view_as=subscriber"><i
+              class="hoverable small fa fa-youtube"></i></a>
+          <a class="grey-text text-lighten-3 tooltipped" href="#!" data-position="top" data-tooltip="(+255)-78865984"><i
+              class="hoverable small fa fa-whatsapp"></i></a>
+          <a class="grey-text text-lighten-3" href="https://www.facebook.com/Stormborn-Labs-318568665364731"><i class="hoverable small fa fa-facebook"></i></a>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright purple darken-3">
+      <div class="container small-text">
+        © 2018 Development
+        <a class="small-text grey-text text-lighten-4 right" href="#home">Stormborn Labs&trade;</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    //initializing the tool tip component..
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.tooltipped');
+      var instances = M.Tooltip.init(elems, {});
+    });
+  </script>
+  <script>
+    //initiating scrollspy..
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.scrollspy');
+      var instances = M.ScrollSpy.init(elems, {});
+    });
+  </script>
+
+  <script src="materialize/js/materialize.js"></script>
+</body>
+
+</html>
