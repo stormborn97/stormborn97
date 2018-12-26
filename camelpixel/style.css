@@ -13,7 +13,13 @@
     width: 100%;
     
 }
-
+.writer-img {
+    width: 150px;
+    height: 150px;
+}
+.me-text{
+    font-size: 12px;
+}
 .navbar{
     box-shadow:2px 2px 2px 2px #686fe1;
 }

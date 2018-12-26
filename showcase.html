@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Stormborn Labs&trade; - Our showcase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="showcase.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="materialize/css/materialize.css">
+  <link rel="icon" type="text/css" href="img/logo.png">
+  <!--<script src="jquery-3.2.1.min.js"></script>-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127849900-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-127849900-1');
+  </script>
+
+</head>
+
+<body>
+
+  <div class="navbar-fixed">
+    <nav class="purple darken-2">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">Stormborn Labs&trade;</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="fa fa-bars"></i>
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#home" class="hoverable">Home</a></li>
+            <li><a href="visions/visions.html" class="hoverable">The Visions</a></li>
+            <li><a href="#developer" class="hoverable waves-effect waves-light modal-trigger">Events</a></li>
+            <li><a href="https://www.patreon.com/stormlite" class="hoverable">Support us</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul id="mobile-nav" class="sidenav">
+    <li><a href="#home" class="waves-effect waves-light">Home</a></li>
+    <li><a href="visions/visions.html" class="waves-effect waves-light">The Visions</a></li>
+    <li><a href="#developer" class="hoverable waves-effect waves-light modal-trigger">Events</a></li>
+    <li><a href="#contacts" class="waves-effect waves-light">Contacts</a></li>
+  </ul>
+  <script>
+    //initializing the sidebar menu
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, {});
+      //set the options to null here...
+    });
+  </script>
+
+  <!-- Modal Structure -->
+  <div id="developer" class="modal">
+    <div class="modal-content">
+      <h5 class="center"> <i class="fa fa-smile-o"></i>&nbsp; What's happening at the Labs?</h5>
+      <div class="col s12 m8">
+              <span class="black-text"> Yay! It's Dev@stormbornlabs here!</span>
+              <p class="red-text"> -->> The village has been released!</p>
+              <p class="cyan-text">-->> The Visions has been added to the site!!</p>
+            </div>
+          </div>
+        </div>
+  <script>
+    //initializing the modal component..
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems, {
+        preventScrolling: true,
+        startingTop: '5%'
+      });
+    });
+  </script>
+
+
+  <!--The section for contents starts here...-->
+  <section id="home" class="slider purple darken-3 scrollspy">
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="center-align">
+      <h5 class="caption white-text">Welcome to our showcase!</h5>
+
+      <div class="row"></div>
+      <a href="#dos" class="adder waves-effect waves-light btn purple hoverable">See more</a>
+    </div>
+    </div>
+  </section>
+  <script>
+    //initializing the sliders
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.slider');
+      var instances = M.Slider.init(elems, {
+        indicators: false,
+        height: 250
+
+      });
+    });
+  </script>
+  <section id="dos" class="dos section scrollspy white grey-text text-darken-3 center">
+      <div class="row">
+        <h5 class="grey-text text-darken-3 center">
+          <span class="purple-text">- <i class="fa fa-gift"></i> -</span>
+        </h5>
+        <div class="col s12 m3">
+          <div class="card-panel hoverable">
+            <img src="img/village_logo.png" class="showcase-img responsive-img">
+            <h6>The Village</h6>
+            <p class="what">A Lowpoly game prototype</p>
+        
+          <div class="center-align">
+              <a href="village/village.html" class="adder pulse hoverable btn purple darken-2 waves-effect waves-light">Go to Page</a></div>
+        </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card-panel hoverable">
+            <img src="img/storm.png" class="showcase-img responsive-img">
+            <h6>StormQuotes <span class="purple-text">Beta</span></h6>
+            <p class="what">A Quotes reading android app.</p>
+        
+          <div class="center-align">
+              <a href="https://play.google.com/store/apps/details?id=com.ionic.stormquotes&hl=en_ZA" class="adder pulse hoverable btn purple darken-2 waves-effect waves-light">Go to App</a></div>
+        </div>
+        </div>
+        <div class="col s12 m3">
+            <div class="card-panel hoverable">
+              <img src="img/camel.png" class="showcase-img responsive-img">
+              <h6>Camelpixel<span class="purple-text">&trade;</span></h6>
+              <p class="what">An image filtering web app.</p>
+          
+            <div class="center-align"><a href="camelpixel/" class="adder pulse hoverable btn purple darken-2 waves-effect waves-light">Go to App</a></div>
+          </div>
+          </div>
+          <div class="col s12 m3">
+            <div class="card-panel hoverable">
+              <img src="img/yepi.png" class="showcase-img responsive-img">
+              <h6>Yepi</h6>
+              <p class="what">A casual android game.</p>
+          
+            <div class="center-align">
+                <a href="https://play.google.com/store/apps/details?id=com.animusapps.yepi" class="adder pulse hoverable btn purple darken-2 waves-effect waves-light">Go to App</a></div>
+          </div>
+          </div>
+       
+      </div>
+  </section>
+ 
+
+
+  <footer id="contacts" class="page-footer purple darken-2 center scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5 class="white-text center">Follow us On:</h5>
+          <p class="what">Follow us on social media for more info.</p>
+
+          <a class="grey-text text-lighten-3" href="https://www.instagram.com/stormborn_labs/"><i class="hoverable small fa fa-instagram"></i></a>
+          <a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCcJ5zd4wRRX1ExktC2Q6BTg?view_as=subscriber"><i
+              class="hoverable small fa fa-youtube"></i></a>
+          <a class="grey-text text-lighten-3 tooltipped" href="#!" data-position="top" data-tooltip="(+255)-788165984"><i
+              class="hoverable small fa fa-whatsapp"></i></a>
+          <a class="grey-text text-lighten-3" href="https://www.facebook.com/Stormborn-Labs-318568665364731"><i class="hoverable small fa fa-facebook"></i></a>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright purple darken-3">
+      <div class="container small-text">
+        © 2018 Development
+        <a class="small-text grey-text text-lighten-4 right" href="#home">Stormborn Labs&trade;</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    //initializing the tool tip component..
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.tooltipped');
+      var instances = M.Tooltip.init(elems, {});
+    });
+  </script>
+  <script>
+    //initiating scrollspy..
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.scrollspy');
+      var instances = M.ScrollSpy.init(elems, {});
+    });
+  </script>
+
+  <script src="materialize/js/materialize.js"></script>
+</body>
+
+</html>
