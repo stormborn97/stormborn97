@@ -1,35 +1,4 @@
-/*
-* ----------------------------------------------------------------------------------------
-Author       : onepageboss
-Template Name: Zestia - OnePage Creative Agency Template
-Version      : 1.0                                          
-* ----------------------------------------------------------------------------------------
-*/
 
-/*
-* ----------------------------------------------------------------------------------------
-* 01.GLOBAL CSS STYLE
-* 02.PRELOADER & BOUNCE CCS STYLE
-* 03.HOMEPAGE CSS STYLE
-    SLIDER BACKGROUND CSS STYLE
-    VIDEO BACKGROUND CSS STYLE
-* 04.ABOUT CSS STYLE
-* 05.SERVICE CSS STYLE
-* 06.CALL TO ACTION CSS STYLE
-* 07.KEY SKILL CSS STYLE
-* 08.PORTFOLIO CSS STYLE
-* 09.TESTIMONIAL CSS STYLE
-* 10.FAQ CSS STYLE
-* 11.CONTACT CSS STYLE
-* 12.FOOTER CSS STYLE
-* ----------------------------------------------------------------------------------------
-*/
-
-/*
-* ----------------------------------------------------------------------------------------
-* 01.GLOBAL STYLE
-* ----------------------------------------------------------------------------------------
-*/
 
 body {
     font-size: 14px;
@@ -455,8 +424,8 @@ a.slide-btn.other-btn:hover {
 }
 
 .particle-bg {
-    background: url(../images/bg/brainstorming-campaign-collaborate-6224.jpg);
-    background-size: cover;
+    background: url(../images/bg/particlebg.jpg);
+    
 }
 
 /*
